@@ -1,0 +1,6 @@
+Dear staffs:
+When I run make check locally and tested my program against the staff package, I could pass all test. However, when i ssh into my account and run make CPATH="$MASTERDIR/lib/proj3/staff-graph.jar:../..:$CLASSPATH" \
+        -C testing check
+I tried to figure out the program and saw no output, which is weird as I indeed have output when I test it locally. I could not pass make01, make03 and make04. I am not sure how should I fix this. Any hint on this?
+Best,
+Wendi

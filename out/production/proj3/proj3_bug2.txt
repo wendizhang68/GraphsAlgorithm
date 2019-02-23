@@ -1,0 +1,4 @@
+Dear staffs:
+In my AG, I met a lot of NullPointerException, and I am not sure is it because I did not check contain(u, v) (checking contain edges) wrong, or it is because my successors(int v) returns null. I failed the tests removeUndirected, removeDirected, and removeDirectedSelf, Could you give me any hints on this? Thanks a lot!
+Best,
+Wendi

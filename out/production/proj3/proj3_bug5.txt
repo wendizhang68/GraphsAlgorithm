@@ -1,0 +1,4 @@
+Dear staffs:
+The AG shows me the error of TestTimedOutException: test timed out after 1000 milliseconds in my GraphTest, and then in my trip-package tests I keep meeting the error CPU time limit exceeded (core dumped), and I cannot see the output. So I am not sure is it because I have timeout in my traversal then I met the error, or is it because there are some problems with my trip package and my output doesn't match with the correct one. I tried to fix the timeout error, can I have any hints on the relationship between these two kinds of errors? If I fix the timeOut error for my graph package, is there any chance I may pass the trip test? Thanks in advance!
+Best,
+Wendi

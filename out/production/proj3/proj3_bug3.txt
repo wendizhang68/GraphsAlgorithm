@@ -1,0 +1,19 @@
+Dear staffs:
+Thanks for telling me that the null pointer exception could be caused by successor method, but I think I should have fixed that though. So I have two questions here:
+1. Could the null pointer exception be caused by contain(u, v) function in GraphObj.java? Right now I did not pass removeUndirected, removeDirected, and removeDirectedSelf because of nullPointer Exception. 
+2. Are we allowed to change our collection after creating an Iterator? For example, if we have 
+UndirectedGraph b = new UndirectedGraph();
+b.add();
+b.add();
+b.add();
+Iteration<Integer> bIter = b.vertices();
+assertEquals(1, (int) bIter.next());
+assertEquals(2, (int) bIter.next());
+Are we allowed to then modify the collection along the process:
+b.remove(3);
+and then expect our iterator acts:
+assertFalse(bIter.hasNext())
+Right now my successor could not handle this case because I assume we are not allowed to change our collection after creating the iterator, so I just pass in a copy of the collection and iterate the copied version.
+Sorry the bug report is pretty long. Thanks for the patience of reading through it!
+Best,
+Wendi
